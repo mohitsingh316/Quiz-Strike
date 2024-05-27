@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Quiz Strike</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="WelcomeMessage">Welcome to Quiz Strike</string>
+</resources>

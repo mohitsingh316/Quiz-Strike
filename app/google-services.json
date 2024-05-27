@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "649370718639",
+    "project_id": "mohit-a6655",
+    "storage_bucket": "mohit-a6655.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:649370718639:android:27db13d25103b8879c9f5a",
+        "android_client_info": {
+          "package_name": "com.example.quizstrike"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBdqTZUPW1dqsgqZSZ_p0tueptFo8oYHM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
