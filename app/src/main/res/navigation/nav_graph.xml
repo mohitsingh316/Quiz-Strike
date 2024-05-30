@@ -59,14 +59,14 @@
         tools:layout="@layout/fragment_detail" >
         <action
             android:id="@+id/action_detailFragment_to_quizragment"
-            app:destination="@id/quizragment" />
+            app:destination="@id/quizFragment" />
         <argument
             android:name="position"
             app:argType="integer"
             android:defaultValue="0" />
     </fragment>
     <fragment
-        android:id="@+id/quizragment"
+        android:id="@+id/quizFragment"
         android:name="com.example.quizstrike.views.QuizFragment"
         android:label="fragment_quiz"
         tools:layout="@layout/fragment_quiz" >

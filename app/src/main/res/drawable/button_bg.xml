@@ -1,7 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <solid android:color="#00000000"/>
-    <stroke android:width="2dp"
-        android:color="@color/light_sky"/>
-</shape>
+<!-- button_bg.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background for correct answer -->
+    <item android:state_selected="true" android:drawable="@drawable/button_bg_correct"/>
+    <!-- Background for incorrect answer -->
+    <item android:state_pressed="true" android:drawable="@drawable/button_bg_incorrect"/>
+    <!-- Default background -->
+    <item android:drawable="@drawable/button_bg_default"/>
+</selector>

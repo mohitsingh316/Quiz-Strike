@@ -5,7 +5,7 @@
     android:id="@+id/close_quiz_btn"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple"
+    android:background="@drawable/gradient_bg"
     tools:context=".views.QuizFragment">
 
 
@@ -82,8 +82,9 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="116dp"
         android:layout_marginEnd="24dp"
+        android:background="@drawable/button_bg"
         android:text="Option 1"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
@@ -96,12 +97,13 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="32dp"
-        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="24dp"
+        android:background="@drawable/button_bg"
         android:text="Option 2"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/option1Btn" />
 
@@ -110,14 +112,17 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="32dp"
-        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="24dp"
+        android:background="@drawable/button_bg"
         android:text="Option 3"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/option2Btn" />
+
+
 
     <Button
         android:id="@+id/nextQueBtn"
@@ -137,12 +142,14 @@
         android:id="@+id/ansFeedbackTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
         android:text="verify answer"
         app:layout_constraintBottom_toTopOf="@+id/nextQueBtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/option3Btn" />
+        app:layout_constraintTop_toBottomOf="@+id/option4Btn"
+        app:layout_constraintVertical_bias="0.725" />
 
     <TextView
         android:id="@+id/countTimeQ"

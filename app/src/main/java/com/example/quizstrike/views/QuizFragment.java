@@ -1,7 +1,15 @@
 package com.example.quizstrike.views;
 
 import android.os.Bundle;
-import com.example.quizstrike.R;
+import android.os.CountDownTimer;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.ProgressBar;
+import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;
@@ -11,16 +19,10 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
-import android.os.CountDownTimer;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.ProgressBar;
-import android.widget.TextView;
 import com.example.quizstrike.Model.QuestionModel;
+import com.example.quizstrike.R;
 import com.example.quizstrike.viewmodel.QuestionViewModel;
+
 import java.util.HashMap;
 import java.util.List;
 
@@ -46,9 +48,7 @@ public class QuizFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        viewModel = new ViewModelProvider(this, ViewModelProvider.AndroidViewModelFactory
-                .getInstance(getActivity().getApplication())).get(QuestionViewModel.class);
+        viewModel = new ViewModelProvider(this).get(QuestionViewModel.class);
     }
 
     @Override
@@ -190,9 +190,9 @@ public class QuizFragment extends Fragment implements View.OnClickListener {
         ansFeedBackTv.setVisibility(View.INVISIBLE);
         nextQueBtn.setVisibility(View.INVISIBLE);
         nextQueBtn.setEnabled(false);
-        option1Btn.setBackground(ContextCompat.getDrawable(getContext(), R.color.light_sky));
-        option2Btn.setBackground(ContextCompat.getDrawable(getContext(), R.color.light_sky));
-        option3Btn.setBackground(ContextCompat.getDrawable(getContext(), R.color.light_sky));
+        option1Btn.setBackground(ContextCompat.getDrawable(getContext(), R.drawable.button_bg_default));
+        option2Btn.setBackground(ContextCompat.getDrawable(getContext(), R.drawable.button_bg_default));
+        option3Btn.setBackground(ContextCompat.getDrawable(getContext(), R.drawable.button_bg_default));
     }
 
     private void submitResults() {
@@ -211,12 +211,12 @@ public class QuizFragment extends Fragment implements View.OnClickListener {
 
     private void verifyAnswer(Button button) {
         if (canAnswer) {
-            if (answer.equals(button.getText().toString())) {
-                button.setBackgroundColor(ContextCompat.getColor(getContext(), R.color.green));
+            if (answer.equals(button.getText())) {
+                button.setBackground(ContextCompat.getDrawable(getContext(), R.drawable.button_bg_correct));
                 correctAnswer++;
                 ansFeedBackTv.setText("Correct Answer");
             } else {
-                button.setBackgroundColor(ContextCompat.getColor(getContext(), R.color.red));
+                button.setBackground(ContextCompat.getDrawable(getContext(), R.drawable.button_bg_incorrect));
                 wrongAnswer++;
                 ansFeedBackTv.setText("Wrong Answer \nCorrect Answer: " + answer);
             }
@@ -225,5 +225,5 @@ public class QuizFragment extends Fragment implements View.OnClickListener {
         countDownTimer.cancel();
         showNextBtn();
     }
-
 }
+
