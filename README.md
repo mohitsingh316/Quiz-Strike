@@ -6,8 +6,6 @@ Here's what makes Quiz Strike stand out:
 
 🎯 **Java MVVM Model**: Built on a robust architecture, ensuring clean separation of concerns and easier maintenance and testing.
 
-🔍 **Jetpack Navigation**: Seamlessly navigate between different screens with Jetpack Navigation, enhancing user flow and experience.
-
 🌟 **Glide Integration**: Stunning visuals are key, and with Glide integration, images load quickly and smoothly, enhancing the overall aesthetic appeal.
 
 🔥 **Firebase Integration**: Leveraging Firebase for backend and authentication adds a layer of security and reliability, ensuring a seamless experience for users.
